@@ -1,3 +1,11 @@
+terraform {
+  required_version = "~> 0.9.3"
+
+  backend "s3" {
+    region = "ap-northeast-1"
+  }
+}
+
 provider "github" {
   organization = "urasan"
 }
